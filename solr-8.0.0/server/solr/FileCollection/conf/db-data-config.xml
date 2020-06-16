@@ -1,0 +1,33 @@
+<dataConfig>
+  <dataSource 
+	    name="mydb"
+	    type="JdbcDataSource"
+            driver="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC"
+            user="root"
+            password="" /> 
+
+  <dataSource type="BinFileDataSource" name="data"/>
+
+  <document>
+    
+   <entity name="search" dataSource="mydb" query="select id as 'id', title, name, date_up, description, type, path_file from filespdf;" >
+	
+	<field column="path_file" name="path_file" />
+	<field column="name" name="name" />
+
+	<entity name="file" 
+                    dataSource="data" 
+                    processor="TikaEntityProcessor" 
+                    url="C:/wamp64/www/Solr_mysql_pdf/${search.path_file}" 
+		   
+                    format="text">
+              
+             <field column="text" name="text" />  
+              
+             </entity>
+	</entity>
+
+	
+  </document>
+</dataConfig>

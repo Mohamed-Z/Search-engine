@@ -1,0 +1,655 @@
+2020-05-18 12:04:03.396 INFO  (main) [   ] o.e.j.u.log Logging initialized @1807ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-18 12:04:03.646 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-05-18 12:04:03.659 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_251-b08
+2020-05-18 12:04:03.705 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/Users/moham/Desktop/solr-8.0.0/server/contexts/] at interval 0
+2020-05-18 12:04:04.511 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-05-18 12:04:04.528 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-05-18 12:04:04.529 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-05-18 12:04:04.531 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-05-18 12:04:04.582 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2020-05-18 12:04:04.610 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-05-18 12:04:04.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.0.0
+2020-05-18 12:04:04.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-05-18 12:04:04.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\Users\moham\Desktop\solr-8.0.0
+2020-05-18 12:04:04.615 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-05-18T12:04:04.615Z
+2020-05-18 12:04:04.636 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\Users\moham\Desktop\solr-8.0.0\server\solr
+2020-05-18 12:04:04.642 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\Users\moham\Desktop\solr-8.0.0\server\solr\solr.xml
+2020-05-18 12:04:04.690 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3, but no JMX reporters were configured - adding default JMX reporter.
+2020-05-18 12:04:05.023 INFO  (main) [   ] o.a.s.c.SolrResourceLoader [null] Added 1 libs to classloader, from paths: [/C:/Users/moham/Desktop/solr-8.0.0/server/solr/lib]
+2020-05-18 12:04:05.173 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-05-18 12:04:06.066 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@1755e85b[provider=null,keyStore=null,trustStore=null]
+2020-05-18 12:04:06.187 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@5ad10c1a[provider=null,keyStore=null,trustStore=null]
+2020-05-18 12:04:06.357 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-05-18 12:04:06.359 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-05-18 12:04:06.448 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:06.450 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:06.457 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:06.514 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 4 core definitions underneath C:\Users\moham\Desktop\solr-8.0.0\server\solr
+2020-05-18 12:04:06.515 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [FileCollection, films, myCollection, tika]
+2020-05-18 12:04:06.687 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrResourceLoader [films] Added 59 libs to classloader, from paths: [/C:/Users/moham/Desktop/solr-8.0.0/contrib/clustering/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/extraction/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/langid/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/velocity/lib, /C:/Users/moham/Desktop/solr-8.0.0/dist]
+2020-05-18 12:04:06.707 WARN  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrConfig Couldn't add files from C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection\..\dist filtered by apache-solr-cell-\d.*\.jar to classpath: C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection\..\dist
+2020-05-18 12:04:06.708 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrResourceLoader [FileCollection] Added 125 libs to classloader, from paths: [/C:/Users/moham/Desktop/solr-8.0.0/contrib/clustering/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/dataimporthandler/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/extraction/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/langid/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/velocity/lib, /C:/Users/moham/Desktop/solr-8.0.0/dist]
+2020-05-18 12:04:06.732 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrResourceLoader [myCollection] Added 83 libs to classloader, from paths: [/C:/Users/moham/Desktop/solr-8.0.0/contrib/clustering/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/dataimporthandler/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/extraction/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/langid/lib, /C:/Users/moham/Desktop/solr-8.0.0/contrib/velocity/lib, /C:/Users/moham/Desktop/solr-8.0.0/dist]
+2020-05-18 12:04:06.889 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 12:04:07.118 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 12:04:07.142 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-05-18 12:04:07.203 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 12:04:07.329 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.IndexSchema [myCollection] Schema name=default-config
+2020-05-18 12:04:07.339 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.IndexSchema [FileCollection] Schema name=default-config
+2020-05-18 12:04:08.192 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 12:04:08.222 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 12:04:08.270 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 12:04:08.326 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@610f7aa{/solr,file:///C:/Users/moham/Desktop/solr-8.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\Users\moham\Desktop\solr-8.0.0\server/solr-webapp/webapp}
+2020-05-18 12:04:08.337 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2fa7ae9{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-18 12:04:08.337 INFO  (main) [   ] o.e.j.s.Server Started @6750ms
+2020-05-18 12:04:08.345 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.CoreContainer Creating SolrCore 'FileCollection' using configuration from instancedir C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection, trusted=true
+2020-05-18 12:04:08.436 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.FileCollection' (registry 'solr.core.FileCollection') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:08.460 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrCore [[FileCollection] ] Opening new SolrCore at [C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection], dataDir=[C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection\data\]
+2020-05-18 12:04:08.506 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.CoreContainer Creating SolrCore 'films' using configuration from instancedir C:\Users\moham\Desktop\solr-8.0.0\server\solr\films, trusted=true
+2020-05-18 12:04:08.507 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:08.507 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [C:\Users\moham\Desktop\solr-8.0.0\server\solr\films], dataDir=[C:\Users\moham\Desktop\solr-8.0.0\server\solr\films\data\]
+2020-05-18 12:04:08.540 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 12:04:08.546 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 12:04:08.555 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.CoreContainer Creating SolrCore 'myCollection' using configuration from instancedir C:\Users\moham\Desktop\solr-8.0.0\server\solr\myCollection, trusted=true
+2020-05-18 12:04:08.555 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.myCollection' (registry 'solr.core.myCollection') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:08.556 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrCore [[myCollection] ] Opening new SolrCore at [C:\Users\moham\Desktop\solr-8.0.0\server\solr\myCollection], dataDir=[C:\Users\moham\Desktop\solr-8.0.0\server\solr\myCollection\data\]
+2020-05-18 12:04:08.564 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 12:04:08.586 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=52
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 12:04:09.413 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 12:04:09.450 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 12:04:09.450 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 12:04:09.454 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 12:04:09.454 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 12:04:09.456 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 12:04:09.457 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 12:04:09.595 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@6e3077e0[myCollection] main]
+2020-05-18 12:04:09.599 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@76693c42[FileCollection] main]
+2020-05-18 12:04:09.611 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\moham\Desktop\solr-8.0.0\server\solr\myCollection\conf
+2020-05-18 12:04:09.611 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\moham\Desktop\solr-8.0.0\server\solr\FileCollection\conf
+2020-05-18 12:04:09.615 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@4b51fbfc[films] main]
+2020-05-18 12:04:09.616 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\moham\Desktop\solr-8.0.0\server\solr\films\conf
+2020-05-18 12:04:09.648 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 12:04:09.649 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 12:04:09.650 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 12:04:09.665 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 12:04:09.665 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 12:04:09.665 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 12:04:09.686 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 12:04:09.686 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 12:04:09.696 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 12:04:09.716 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@76693c42[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1a(8.0.0):C5:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1588209798486}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.716 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 12:04:09.716 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6e3077e0[myCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(8.0.0):C51:[diagnostics={java.runtime.version=1.8.0_231-b11, java.vendor=Oracle Corporation, java.version=1.8.0_231, java.vm.version=25.231-b11, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1583076997429}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.717 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 12:04:09.717 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 12:04:09.719 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 12:04:09.719 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4b51fbfc[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1587518625424}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_s(8.0.0):C10:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, mergeMaxNumSegments=-1, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=merge, mergeFactor=10, os.version=10.0, timestamp=1589798431468}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.719 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 12:04:09.719 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 12:04:09.728 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.SolrCore [myCollection] Registered new searcher Searcher@6e3077e0[myCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(8.0.0):C51:[diagnostics={java.runtime.version=1.8.0_231-b11, java.vendor=Oracle Corporation, java.version=1.8.0_231, java.vm.version=25.231-b11, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1583076997429}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.728 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@4b51fbfc[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1587518625424}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_s(8.0.0):C10:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, mergeMaxNumSegments=-1, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=merge, mergeFactor=10, os.version=10.0, timestamp=1589798431468}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.729 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@76693c42[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1a(8.0.0):C5:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1588209798486}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:09.738 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.SolrResourceLoader [tika] Added 44 libs to classloader, from paths: [/C:/Users/moham/Desktop/solr-8.0.0/contrib/extraction/lib, /C:/Users/moham/Desktop/solr-8.0.0/dist]
+2020-05-18 12:04:09.888 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 12:04:09.897 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.IndexSchema [tika] Schema name=example-DIH-tika
+2020-05-18 12:04:09.902 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.IndexSchema Loaded schema example-DIH-tika/1.6 with uniqueid field id
+2020-05-18 12:04:09.904 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tika' using configuration from instancedir C:\Users\moham\Desktop\solr-8.0.0\server\solr\tika, trusted=true
+2020-05-18 12:04:09.905 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tika' (registry 'solr.core.tika') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 12:04:09.905 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.c.SolrCore [[tika] ] Opening new SolrCore at [C:\Users\moham\Desktop\solr-8.0.0\server\solr\tika], dataDir=[C:\Users\moham\Desktop\solr-8.0.0\server\solr\tika\data\]
+2020-05-18 12:04:09.959 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2020-05-18 12:04:09.959 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 12:04:09.970 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6f3d70f3[tika] main]
+2020-05-18 12:04:09.970 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\Users\moham\Desktop\solr-8.0.0\server\solr\tika\conf
+2020-05-18 12:04:09.971 INFO  (coreLoadExecutor-9-thread-2) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 12:04:09.978 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@6f3d70f3[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1589802800415}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:04:13.993 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803453928} status=0 QTime=4
+2020-05-18 12:04:14.030 INFO  (qtp349420578-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803453928} status=0 QTime=38
+2020-05-18 12:04:14.065 INFO  (qtp349420578-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803453928} status=0 QTime=29
+2020-05-18 12:04:17.334 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803453928} status=0 QTime=0
+2020-05-18 12:04:17.347 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1589803453928&ts=1589803453928} status=503 QTime=1
+2020-05-18 12:04:17.350 INFO  (qtp349420578-23) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1589803457320} status=0 QTime=13
+2020-05-18 12:04:17.355 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/replication params={wt=json&command=details&_=1589803457320} status=0 QTime=18
+2020-05-18 12:04:17.411 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803453928} status=0 QTime=76
+2020-05-18 12:04:17.411 INFO  (qtp349420578-15) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/system params={wt=json&_=1589803457320} status=0 QTime=73
+2020-05-18 12:04:19.415 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803453928} status=0 QTime=0
+2020-05-18 12:04:19.417 INFO  (qtp349420578-23) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803459398} status=0 QTime=0
+2020-05-18 12:04:19.453 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803453928} status=0 QTime=37
+2020-05-18 12:04:19.471 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803453928} status=0 QTime=0
+2020-05-18 12:04:19.475 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803459398} status=0 QTime=0
+2020-05-18 12:04:19.488 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803459398} status=0 QTime=9
+2020-05-18 12:04:19.513 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803453928} status=0 QTime=39
+2020-05-18 12:04:43.075 INFO  (qtp349420578-23) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:04:43.134 ERROR (qtp349420578-23) [   x:tika] o.a.s.h.RequestHandlerBase org.apache.solr.handler.dataimport.DataImportHandlerException: Data Config problem: Le balisage du document suivant l'élément racine doit avoir un format correct.
+	at org.apache.solr.handler.dataimport.DataImporter.loadDataConfig(DataImporter.java:230)
+	at org.apache.solr.handler.dataimport.DataImporter.maybeReloadConfiguration(DataImporter.java:131)
+	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:174)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/tika-data-config.xml; lineNumber: 30; columnNumber: 3; Le balisage du document suivant l'élément racine doit avoir un format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.solr.handler.dataimport.DataImporter.loadDataConfig(DataImporter.java:220)
+	... 42 more
+
+2020-05-18 12:04:43.135 INFO  (qtp349420578-23) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589803459398&verbose=false} status=500 QTime=63
+2020-05-18 12:04:43.135 ERROR (qtp349420578-23) [   x:tika] o.a.s.s.HttpSolrCall null:org.apache.solr.handler.dataimport.DataImportHandlerException: Data Config problem: Le balisage du document suivant l'élément racine doit avoir un format correct.
+	at org.apache.solr.handler.dataimport.DataImporter.loadDataConfig(DataImporter.java:230)
+	at org.apache.solr.handler.dataimport.DataImporter.maybeReloadConfiguration(DataImporter.java:131)
+	at org.apache.solr.handler.dataimport.DataImportHandler.handleRequestBody(DataImportHandler.java:174)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2559)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:711)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:394)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:340)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.xml.sax.SAXParseException; systemId: solrres:/tika-data-config.xml; lineNumber: 30; columnNumber: 3; Le balisage du document suivant l'élément racine doit avoir un format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$TrailingMiscDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at org.apache.solr.handler.dataimport.DataImporter.loadDataConfig(DataImporter.java:220)
+	... 42 more
+
+2020-05-18 12:06:06.931 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803566817} status=0 QTime=0
+2020-05-18 12:06:06.935 INFO  (qtp349420578-18) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:06.946 INFO  (qtp349420578-22) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803566915} status=0 QTime=1
+2020-05-18 12:06:06.971 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803566817} status=0 QTime=37
+2020-05-18 12:06:06.998 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:11.420 INFO  (qtp349420578-18) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:06:11.437 INFO  (qtp349420578-18) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:06:11.437 INFO  (qtp349420578-18) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:06:11.470 INFO  (qtp349420578-18) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803566915&verbose=false} status=0 QTime=52
+2020-05-18 12:06:11.471 INFO  (Thread-15) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:06:11.491 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:06:11.492 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:11.934 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:06:12.776 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 842
+2020-05-18 12:06:12.809 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:13.530 ERROR (Thread-15) [   ] o.a.s.h.d.BinURLDataSource Exception thrown while getting data
+java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86) ~[?:?]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38) ~[?:?]
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132) ~[?:?]
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+2020-05-18 12:06:13.558 ERROR (Thread-15) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [date=2020-02-15 01:21:02.0, keywords=cours asp mvc partie1, name=ASPMVC-Partie1.pdf, id=4, title=coursASP]):org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86)
+	... 12 more
+
+2020-05-18 12:06:13.558 INFO  (Thread-15) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803566915&verbose=false} status=0 QTime=52{} 0 2141
+2020-05-18 12:06:13.605 ERROR (Thread-15) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86)
+	... 12 more
+
+2020-05-18 12:06:13.606 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 12:06:13.614 INFO  (Thread-15) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 12:06:13.614 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 12:06:15.003 INFO  (qtp349420578-18) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:31.193 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803566817} status=0 QTime=0
+2020-05-18 12:06:31.220 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803566817} status=0 QTime=26
+2020-05-18 12:06:32.842 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={q=*:*&_=1589803591158} hits=1 status=0 QTime=46
+2020-05-18 12:06:37.739 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803566817} status=0 QTime=0
+2020-05-18 12:06:37.740 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:37.788 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803566817} status=0 QTime=47
+2020-05-18 12:06:37.801 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803566817} status=0 QTime=0
+2020-05-18 12:06:37.805 INFO  (qtp349420578-16) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:37.809 INFO  (qtp349420578-21) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:37.826 INFO  (qtp349420578-16) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:37.838 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803566817} status=0 QTime=36
+2020-05-18 12:06:41.892 INFO  (qtp349420578-21) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:06:41.896 INFO  (qtp349420578-21) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:06:41.896 INFO  (qtp349420578-21) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:06:41.897 INFO  (qtp349420578-21) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803566915&verbose=false} status=0 QTime=6
+2020-05-18 12:06:41.897 INFO  (Thread-16) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:06:41.906 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=0
+2020-05-18 12:06:41.911 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:06:41.924 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:06:41.932 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 8
+2020-05-18 12:06:41.951 ERROR (Thread-16) [   ] o.a.s.h.d.BinURLDataSource Exception thrown while getting data
+java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[?:1.8.0_251]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[?:1.8.0_251]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86) ~[?:?]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38) ~[?:?]
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132) ~[?:?]
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+2020-05-18 12:06:41.955 ERROR (Thread-16) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [date=2020-02-15 01:21:02.0, keywords=cours asp mvc partie1, name=ASPMVC-Partie1.pdf, id=4, title=coursASP]):org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86)
+	... 12 more
+
+2020-05-18 12:06:41.955 INFO  (Thread-16) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803566915&verbose=false} status=0 QTime=6{} 0 64
+2020-05-18 12:06:41.956 ERROR (Thread-16) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:86)
+	... 12 more
+
+2020-05-18 12:06:41.956 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 12:06:41.961 INFO  (Thread-16) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 12:06:41.961 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 12:06:43.587 INFO  (qtp349420578-21) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803566915} status=0 QTime=2
+2020-05-18 12:07:48.949 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803668830} status=0 QTime=0
+2020-05-18 12:07:48.975 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803668925} status=0 QTime=0
+2020-05-18 12:07:48.997 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803668925} status=0 QTime=0
+2020-05-18 12:07:49.008 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803668831} status=0 QTime=40
+2020-05-18 12:07:49.011 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803668925} status=0 QTime=0
+2020-05-18 12:07:50.875 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:07:50.878 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:07:50.878 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:07:50.878 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589803668925&verbose=false} status=0 QTime=4
+2020-05-18 12:07:50.884 INFO  (Thread-17) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:07:50.891 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803668925} status=0 QTime=0
+2020-05-18 12:07:50.907 INFO  (Thread-17) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:07:50.918 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:07:50.921 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 12:07:50.939 WARN  (Thread-17) [   ] o.a.s.h.d.FileDataSource FileDataSource.basePath is empty. Resolving to: C:\Users\moham\Desktop\solr-8.0.0\server\.
+2020-05-18 12:07:50.939 ERROR (Thread-17) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [date=2020-02-15 01:21:02.0, keywords=cours asp mvc partie1, name=ASPMVC-Partie1.pdf, id=4, title=coursASP]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 12:07:50.940 INFO  (Thread-17) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589803668925&verbose=false} status=0 QTime=4{} 0 65
+2020-05-18 12:07:50.940 ERROR (Thread-17) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 12:07:50.940 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 12:07:50.945 INFO  (Thread-17) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 12:07:50.945 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 12:07:52.436 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803668925} status=0 QTime=2
+2020-05-18 12:08:06.901 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803686794} status=0 QTime=0
+2020-05-18 12:08:06.906 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:06.907 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:06.937 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803686794} status=0 QTime=33
+2020-05-18 12:08:06.970 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:10.460 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:08:10.466 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:08:10.466 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:08:10.467 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803686886&verbose=false} status=0 QTime=9
+2020-05-18 12:08:10.467 INFO  (Thread-18) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:08:10.478 INFO  (qtp349420578-15) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:10.481 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:08:10.489 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:08:10.493 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 12:08:10.597 INFO  (Thread-18) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 12:08:10.598 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 12:08:10.598 INFO  (Thread-18) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1cb5673f commitCommandVersion:0
+2020-05-18 12:08:11.691 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=2
+2020-05-18 12:08:12.092 INFO  (Thread-18) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@8e47a8d[tika] main]
+2020-05-18 12:08:12.097 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 12:08:12.102 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@8e47a8d[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1589802800415}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_1(8.0.0):C5:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589803690697}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:08:12.121 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:08:12.122 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 12:08:12.123 INFO  (Thread-18) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.641
+2020-05-18 12:08:12.123 INFO  (Thread-18) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803686886&verbose=false} status=0 QTime=9{add=[4, 5, 7, 8, 9],commit=} 0 1664
+2020-05-18 12:08:12.955 INFO  (qtp349420578-15) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:26.902 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803686794} status=0 QTime=0
+2020-05-18 12:08:26.934 INFO  (qtp349420578-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803686794} status=0 QTime=30
+2020-05-18 12:08:29.876 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={q=*:*&_=1589803706870} hits=6 status=0 QTime=2
+2020-05-18 12:08:36.727 INFO  (qtp349420578-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803686794} status=0 QTime=0
+2020-05-18 12:08:36.733 INFO  (qtp349420578-15) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:36.771 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803686794} status=0 QTime=43
+2020-05-18 12:08:36.784 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803686794} status=0 QTime=0
+2020-05-18 12:08:36.792 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:36.796 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:36.816 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:36.821 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803686794} status=0 QTime=36
+2020-05-18 12:08:47.686 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:08:47.688 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:08:47.689 INFO  (qtp349420578-14) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:08:47.689 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803686886&verbose=false} status=0 QTime=4
+2020-05-18 12:08:47.708 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=0
+2020-05-18 12:08:47.711 INFO  (Thread-19) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:08:47.728 INFO  (Thread-19) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:08:47.737 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:08:47.740 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 12:08:47.762 WARN  (Thread-19) [   ] o.a.s.h.d.FileDataSource FileDataSource.basePath is empty. Resolving to: C:\Users\moham\Desktop\solr-8.0.0\server\.
+2020-05-18 12:08:47.762 ERROR (Thread-19) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [date=2020-02-15 01:21:02.0, keywords=cours asp mvc partie1, name=ASPMVC-Partie1.pdf, id=4, title=coursASP]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 12:08:47.763 INFO  (Thread-19) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803686886&verbose=false} status=0 QTime=4{} 0 78
+2020-05-18 12:08:47.763 ERROR (Thread-19) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: http://localhost/solr_mysql_files/upload/RAPPORT DE STAGE.pdf (resolved to: C:\Users\moham\Desktop\solr-8.0.0\server\.\http:\localhost\solr_mysql_files\upload\RAPPORT DE STAGE.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 12:08:47.764 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 12:08:47.772 INFO  (Thread-19) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 12:08:47.772 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 12:08:49.117 INFO  (qtp349420578-14) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803686886} status=0 QTime=1
+2020-05-18 12:09:25.816 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803765708} status=0 QTime=0
+2020-05-18 12:09:25.820 INFO  (qtp349420578-22) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:25.828 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:25.853 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803765708} status=0 QTime=35
+2020-05-18 12:09:25.874 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:30.348 INFO  (qtp349420578-20) [   x:tika] o.a.s.h.d.DataImporter Loading DIH Configuration: tika-data-config.xml
+2020-05-18 12:09:30.353 INFO  (qtp349420578-20) [   x:tika] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 12:09:30.353 INFO  (qtp349420578-20) [   x:tika] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 12:09:30.354 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803765800&verbose=false} status=0 QTime=7
+2020-05-18 12:09:30.386 INFO  (Thread-20) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 12:09:30.395 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:30.395 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:09:30.408 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 12:09:30.413 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 12:09:31.905 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=1
+2020-05-18 12:09:32.221 INFO  (Thread-20) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 12:09:32.221 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 12:09:32.221 INFO  (Thread-20) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@48b4db29 commitCommandVersion:0
+2020-05-18 12:09:32.704 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:33.586 INFO  (qtp349420578-19) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:33.892 INFO  (Thread-20) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@2dec0d6a[tika] main]
+2020-05-18 12:09:33.892 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 12:09:33.894 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@2dec0d6a[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1589802800415}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_2(8.0.0):C5:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589803772247}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 12:09:33.897 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 12:09:33.898 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 12:09:33.898 INFO  (Thread-20) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:3.503
+2020-05-18 12:09:33.898 INFO  (Thread-20) [   ] o.a.s.u.p.LogUpdateProcessorFactory [tika]  webapp=/solr path=/dataimport params={core=tika&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589803765800&verbose=false} status=0 QTime=7{add=[4, 5, 7, 8, 9],commit=} 0 3551
+2020-05-18 12:09:35.176 INFO  (qtp349420578-20) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589803765800} status=0 QTime=0
+2020-05-18 12:09:40.002 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589803765708} status=0 QTime=0
+2020-05-18 12:09:40.040 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589803765708} status=0 QTime=37
+2020-05-18 12:09:43.483 INFO  (qtp349420578-21) [   x:tika] o.a.s.c.S.Request [tika]  webapp=/solr path=/select params={q=*:*&_=1589803779969} hits=6 status=0 QTime=0
+2020-05-18 12:10:59.846 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@2fa7ae9{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-18 12:10:59.847 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-05-18 12:10:59.849 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=2133344792
+2020-05-18 12:10:59.851 INFO  (coreCloseExecutor-29-thread-2) [   x:FileCollection] o.a.s.c.SolrCore [FileCollection]  CLOSING SolrCore org.apache.solr.core.SolrCore@272d69e6
+2020-05-18 12:10:59.851 INFO  (coreCloseExecutor-29-thread-1) [   x:myCollection] o.a.s.c.SolrCore [myCollection]  CLOSING SolrCore org.apache.solr.core.SolrCore@15a7988a
+2020-05-18 12:10:59.851 INFO  (coreCloseExecutor-29-thread-2) [   x:FileCollection] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.FileCollection, tag=272d69e6
+2020-05-18 12:10:59.852 INFO  (coreCloseExecutor-29-thread-2) [   x:FileCollection] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@556b492a: rootName = null, domain = solr.core.FileCollection, service url = null, agent id = null] for registry solr.core.FileCollection / com.codahale.metrics.MetricRegistry@1ca49131
+2020-05-18 12:10:59.852 INFO  (coreCloseExecutor-29-thread-3) [   x:films] o.a.s.c.SolrCore [films]  CLOSING SolrCore org.apache.solr.core.SolrCore@5f55191a
+2020-05-18 12:10:59.852 INFO  (coreCloseExecutor-29-thread-4) [   x:tika] o.a.s.c.SolrCore [tika]  CLOSING SolrCore org.apache.solr.core.SolrCore@2c819da2
+2020-05-18 12:10:59.863 INFO  (coreCloseExecutor-29-thread-1) [   x:myCollection] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.myCollection, tag=15a7988a
+2020-05-18 12:10:59.863 INFO  (coreCloseExecutor-29-thread-1) [   x:myCollection] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@57cb273a: rootName = null, domain = solr.core.myCollection, service url = null, agent id = null] for registry solr.core.myCollection / com.codahale.metrics.MetricRegistry@5fa6dd76
+2020-05-18 12:10:59.880 INFO  (coreCloseExecutor-29-thread-4) [   x:tika] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tika, tag=2c819da2
+2020-05-18 12:10:59.880 INFO  (coreCloseExecutor-29-thread-4) [   x:tika] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@65969316: rootName = null, domain = solr.core.tika, service url = null, agent id = null] for registry solr.core.tika / com.codahale.metrics.MetricRegistry@2dc7dd59
+2020-05-18 12:10:59.891 INFO  (coreCloseExecutor-29-thread-3) [   x:films] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.films, tag=5f55191a
+2020-05-18 12:10:59.892 INFO  (coreCloseExecutor-29-thread-3) [   x:films] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@67fdac6f: rootName = null, domain = solr.core.films, service url = null, agent id = null] for registry solr.core.films / com.codahale.metrics.MetricRegistry@27151438
+2020-05-18 12:10:59.919 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-05-18 12:10:59.920 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3af4e0bf: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@7813786d
+2020-05-18 12:10:59.921 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-05-18 12:10:59.921 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@34abdee4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@408670df
+2020-05-18 12:10:59.922 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-05-18 12:10:59.922 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@71a9b4c7: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@50e7b342
+2020-05-18 12:10:59.931 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@610f7aa{/solr,null,UNAVAILABLE}{C:\Users\moham\Desktop\solr-8.0.0\server/solr-webapp/webapp}

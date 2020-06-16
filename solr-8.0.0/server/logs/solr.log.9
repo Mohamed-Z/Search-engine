@@ -1,0 +1,1356 @@
+2020-05-18 15:45:04.446 INFO  (main) [   ] o.e.j.u.log Logging initialized @1339ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-18 15:45:04.704 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-05-18 15:45:04.713 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_251-b08
+2020-05-18 15:45:04.746 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/server/contexts/] at interval 0
+2020-05-18 15:45:05.437 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-05-18 15:45:05.447 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-05-18 15:45:05.447 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-05-18 15:45:05.449 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-05-18 15:45:05.500 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2020-05-18 15:45:05.526 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-05-18 15:45:05.530 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr� version 8.0.0
+2020-05-18 15:45:05.530 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-05-18 15:45:05.530 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0
+2020-05-18 15:45:05.531 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-05-18T15:45:05.531Z
+2020-05-18 15:45:05.551 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr
+2020-05-18 15:45:05.557 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\solr.xml
+2020-05-18 15:45:05.603 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3, but no JMX reporters were configured - adding default JMX reporter.
+2020-05-18 15:45:06.062 INFO  (main) [   ] o.a.s.c.SolrResourceLoader [null] Added 1 libs to classloader, from paths: [/C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/server/solr/lib]
+2020-05-18 15:45:06.198 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-05-18 15:45:06.743 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@1755e85b[provider=null,keyStore=null,trustStore=null]
+2020-05-18 15:45:06.877 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for SslContextFactory@5ad10c1a[provider=null,keyStore=null,trustStore=null]
+2020-05-18 15:45:07.078 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-05-18 15:45:07.079 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-05-18 15:45:07.146 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:07.146 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:07.154 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:07.199 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 4 core definitions underneath C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr
+2020-05-18 15:45:07.200 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [FileCollection, films, myCollection, tika]
+2020-05-18 15:45:07.294 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrResourceLoader [films] Added 59 libs to classloader, from paths: [/C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/clustering/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/extraction/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/langid/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/velocity/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/dist]
+2020-05-18 15:45:07.310 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrResourceLoader [myCollection] Added 83 libs to classloader, from paths: [/C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/clustering/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/dataimporthandler/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/extraction/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/langid/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/velocity/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/dist]
+2020-05-18 15:45:07.329 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrResourceLoader [FileCollection] Added 103 libs to classloader, from paths: [/C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/clustering/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/extraction/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/langid/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/velocity/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/dist]
+2020-05-18 15:45:07.461 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 15:45:07.475 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 15:45:07.494 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 15:45:07.748 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.IndexSchema [myCollection] Schema name=default-config
+2020-05-18 15:45:07.761 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.IndexSchema [FileCollection] Schema name=default-config
+2020-05-18 15:45:07.772 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-05-18 15:45:08.628 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 15:45:08.635 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 15:45:08.664 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-05-18 15:45:08.719 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.CoreContainer Creating SolrCore 'FileCollection' using configuration from instancedir C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\FileCollection, trusted=true
+2020-05-18 15:45:08.719 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.CoreContainer Creating SolrCore 'myCollection' using configuration from instancedir C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\myCollection, trusted=true
+2020-05-18 15:45:08.741 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.CoreContainer Creating SolrCore 'films' using configuration from instancedir C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\films, trusted=true
+2020-05-18 15:45:08.771 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:08.771 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.myCollection' (registry 'solr.core.myCollection') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:08.772 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.FileCollection' (registry 'solr.core.FileCollection') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:08.795 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\films], dataDir=[C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\films\data\]
+2020-05-18 15:45:08.795 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.c.SolrCore [[myCollection] ] Opening new SolrCore at [C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\myCollection], dataDir=[C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\myCollection\data\]
+2020-05-18 15:45:08.795 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.c.SolrCore [[FileCollection] ] Opening new SolrCore at [C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\FileCollection], dataDir=[C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\FileCollection\data\]
+2020-05-18 15:45:08.883 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 15:45:08.884 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 15:45:08.888 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-05-18 15:45:09.121 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@610f7aa{/solr,file:///C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/server/solr-webapp/webapp/,AVAILABLE}{C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server/solr-webapp/webapp}
+2020-05-18 15:45:09.166 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2fa7ae9{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-05-18 15:45:09.167 INFO  (main) [   ] o.e.j.s.Server Started @6062ms
+2020-05-18 15:45:09.651 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=111
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 15:45:09.850 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-05-18 15:45:09.888 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 15:45:09.888 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 15:45:09.893 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 15:45:09.893 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 15:45:09.895 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-05-18 15:45:09.895 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 15:45:09.974 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@61faf785[FileCollection] main]
+2020-05-18 15:45:09.989 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\FileCollection\conf
+2020-05-18 15:45:10.059 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 15:45:10.069 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 15:45:10.072 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@358fa82f[myCollection] main]
+2020-05-18 15:45:10.073 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\myCollection\conf
+2020-05-18 15:45:10.074 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 15:45:10.074 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 15:45:10.093 INFO  (coreLoadExecutor-9-thread-3) [   x:myCollection] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 15:45:10.093 INFO  (coreLoadExecutor-9-thread-1) [   x:FileCollection] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 15:45:10.119 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@61faf785[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 15:45:10.119 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 15:45:10.119 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 15:45:10.121 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@358fa82f[myCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(8.0.0):C51:[diagnostics={java.runtime.version=1.8.0_231-b11, java.vendor=Oracle Corporation, java.version=1.8.0_231, java.vm.version=25.231-b11, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1583076997429}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 15:45:10.121 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 15:45:10.121 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 15:45:10.124 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrResourceLoader [tika] Added 44 libs to classloader, from paths: [/C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/contrib/extraction/lib, /C:/wamp64/www/Solr_mysql_pdf/solr-8.0.0/dist]
+2020-05-18 15:45:10.130 INFO  (searcherExecutor-10-thread-1-processing-x:FileCollection) [   x:FileCollection] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@61faf785[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 15:45:10.130 INFO  (searcherExecutor-12-thread-1-processing-x:myCollection) [   x:myCollection] o.a.s.c.SolrCore [myCollection] Registered new searcher Searcher@358fa82f[myCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_j(8.0.0):C51:[diagnostics={java.runtime.version=1.8.0_231-b11, java.vendor=Oracle Corporation, java.version=1.8.0_231, java.vm.version=25.231-b11, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1583076997429}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 15:45:10.135 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@76f3626d[films] main]
+2020-05-18 15:45:10.136 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\films\conf
+2020-05-18 15:45:10.136 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-05-18 15:45:10.136 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-05-18 15:45:10.138 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 15:45:10.140 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@76f3626d[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1587518625424}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_s(8.0.0):C10:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, mergeMaxNumSegments=-1, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=merge, mergeFactor=10, os.version=10.0, timestamp=1589798431468}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 15:45:10.140 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 15:45:10.140 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-05-18 15:45:10.145 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@76f3626d[films] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_h(8.0.0):C1:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1587518625424}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_s(8.0.0):C10:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, mergeMaxNumSegments=-1, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=merge, mergeFactor=10, os.version=10.0, timestamp=1589798431468}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 15:45:10.157 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.0.0
+2020-05-18 15:45:10.167 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema [tika] Schema name=example-DIH-tika
+2020-05-18 15:45:10.174 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.IndexSchema Loaded schema example-DIH-tika/1.6 with uniqueid field id
+2020-05-18 15:45:10.176 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tika' using configuration from instancedir C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\tika, trusted=true
+2020-05-18 15:45:10.177 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tika' (registry 'solr.core.tika') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@797badd3
+2020-05-18 15:45:10.177 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.c.SolrCore [[tika] ] Opening new SolrCore at [C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\tika], dataDir=[C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\tika\data\]
+2020-05-18 15:45:10.265 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2020-05-18 15:45:10.265 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-05-18 15:45:10.280 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@e2ef809[tika] main]
+2020-05-18 15:45:10.280 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: C:\wamp64\www\Solr_mysql_pdf\solr-8.0.0\server\solr\tika\conf
+2020-05-18 15:45:10.283 INFO  (coreLoadExecutor-9-thread-1) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-05-18 15:45:10.291 INFO  (searcherExecutor-25-thread-1) [   ] o.a.s.c.SolrCore [tika] Registered new searcher Searcher@e2ef809[tika] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(8.0.0):C5:[diagnostics={java.runtime.version=1.8.0_251-b08, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os=Windows 10, os.arch=amd64, os.version=10.0, source=flush, timestamp=1589804744373}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 15:45:15.669 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589816715528} status=0 QTime=3
+2020-05-18 15:45:15.713 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816715528} status=0 QTime=46
+2020-05-18 15:45:15.751 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816715528} status=0 QTime=29
+2020-05-18 15:45:19.769 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589816715528} status=0 QTime=0
+2020-05-18 15:45:19.798 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1589816715528&ts=1589816715528} status=503 QTime=1
+2020-05-18 15:45:19.800 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/replication params={wt=json&command=details&_=1589816719761} status=0 QTime=6
+2020-05-18 15:45:19.807 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1589816719761} status=0 QTime=25
+2020-05-18 15:45:19.850 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816715528} status=0 QTime=76
+2020-05-18 15:45:19.854 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/system params={wt=json&_=1589816719761} status=0 QTime=57
+2020-05-18 15:45:22.703 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589816715528} status=0 QTime=0
+2020-05-18 15:45:22.705 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589816722683} status=0 QTime=0
+2020-05-18 15:45:22.744 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816715528} status=0 QTime=40
+2020-05-18 15:45:22.761 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589816715528} status=0 QTime=0
+2020-05-18 15:45:22.763 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589816722683} status=0 QTime=0
+2020-05-18 15:45:22.776 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589816722683} status=0 QTime=12
+2020-05-18 15:45:22.793 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816722683} status=0 QTime=0
+2020-05-18 15:45:22.795 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816715528} status=0 QTime=33
+2020-05-18 15:45:28.161 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:45:28.200 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:45:28.200 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:45:28.212 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589816722683&verbose=false} status=0 QTime=52
+2020-05-18 15:45:28.212 INFO  (Thread-15) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:45:28.219 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816722683} status=0 QTime=0
+2020-05-18 15:45:28.243 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:45:28.560 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:45:28.911 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 350
+2020-05-18 15:45:28.931 ERROR (Thread-15) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:45:28.931 INFO  (Thread-15) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589816722683&verbose=false} status=0 QTime=52{} 0 771
+2020-05-18 15:45:28.938 ERROR (Thread-15) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:45:28.939 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:45:28.942 INFO  (Thread-15) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:45:28.942 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:45:30.804 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816722683} status=0 QTime=0
+2020-05-18 15:46:56.041 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589816815918} status=0 QTime=0
+2020-05-18 15:46:56.044 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589816816024} status=0 QTime=0
+2020-05-18 15:46:56.079 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589816816024} status=0 QTime=2
+2020-05-18 15:46:56.096 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589816815918} status=0 QTime=52
+2020-05-18 15:46:56.100 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816816024} status=0 QTime=0
+2020-05-18 15:47:01.002 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:47:01.004 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:47:01.005 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:47:01.006 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589816816024&verbose=false} status=0 QTime=4
+2020-05-18 15:47:01.011 INFO  (Thread-16) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:47:01.016 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816816024} status=0 QTime=0
+2020-05-18 15:47:01.024 INFO  (Thread-16) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:47:01.045 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:47:01.051 INFO  (Thread-16) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2020-05-18 15:47:01.051 ERROR (Thread-16) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:47:01.051 INFO  (Thread-16) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589816816024&verbose=false} status=0 QTime=4{} 0 50
+2020-05-18 15:47:01.052 ERROR (Thread-16) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:47:01.052 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:47:01.056 INFO  (Thread-16) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:47:01.056 INFO  (Thread-16) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:47:04.048 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816816024} status=0 QTime=0
+2020-05-18 15:47:06.716 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589816816024} status=0 QTime=0
+2020-05-18 15:52:23.017 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817142883} status=0 QTime=0
+2020-05-18 15:52:23.028 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817142998} status=0 QTime=0
+2020-05-18 15:52:23.034 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817142998} status=0 QTime=0
+2020-05-18 15:52:23.060 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817142883} status=0 QTime=39
+2020-05-18 15:52:23.087 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817142998} status=0 QTime=0
+2020-05-18 15:52:24.855 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:52:24.858 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:52:24.858 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:52:24.859 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589817142998&verbose=false} status=0 QTime=4
+2020-05-18 15:52:24.859 INFO  (Thread-17) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:52:24.875 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817142998} status=0 QTime=0
+2020-05-18 15:52:24.882 INFO  (Thread-17) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:52:24.902 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:52:24.907 INFO  (Thread-17) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 15:52:24.908 ERROR (Thread-17) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:52:24.908 INFO  (Thread-17) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589817142998&verbose=false} status=0 QTime=4{} 0 54
+2020-05-18 15:52:24.909 ERROR (Thread-17) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:52:24.909 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:52:24.911 INFO  (Thread-17) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:52:24.911 INFO  (Thread-17) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:52:26.513 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817142998} status=0 QTime=0
+2020-05-18 15:55:39.341 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817339206} status=0 QTime=0
+2020-05-18 15:55:39.348 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817339323} status=0 QTime=0
+2020-05-18 15:55:39.353 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817339323} status=0 QTime=0
+2020-05-18 15:55:39.381 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817339206} status=0 QTime=40
+2020-05-18 15:55:39.415 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817339323} status=0 QTime=0
+2020-05-18 15:55:58.901 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:55:58.905 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:55:58.905 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:55:58.905 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817339323&verbose=false} status=0 QTime=4
+2020-05-18 15:55:58.907 INFO  (Thread-18) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:55:58.920 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817339323} status=0 QTime=0
+2020-05-18 15:55:58.926 INFO  (Thread-18) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:55:58.961 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:55:58.968 INFO  (Thread-18) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 6
+2020-05-18 15:55:58.969 ERROR (Thread-18) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:55:58.969 INFO  (Thread-18) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817339323&verbose=false} status=0 QTime=4{} 0 68
+2020-05-18 15:55:58.970 ERROR (Thread-18) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:55:58.970 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:55:58.977 INFO  (Thread-18) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:55:58.977 INFO  (Thread-18) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:56:01.211 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817339323} status=0 QTime=0
+2020-05-18 15:57:31.983 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817451847} status=0 QTime=0
+2020-05-18 15:57:31.987 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817451965} status=0 QTime=0
+2020-05-18 15:57:31.992 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817451965} status=0 QTime=0
+2020-05-18 15:57:32.037 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817451847} status=0 QTime=50
+2020-05-18 15:57:51.773 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817471622} status=0 QTime=0
+2020-05-18 15:57:51.778 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817471755} status=0 QTime=1
+2020-05-18 15:57:51.783 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817471755} status=0 QTime=0
+2020-05-18 15:57:51.820 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817471623} status=0 QTime=46
+2020-05-18 15:57:51.846 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817471755} status=0 QTime=0
+2020-05-18 15:57:55.959 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:57:55.960 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:57:55.960 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:57:55.960 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817471755&verbose=false} status=0 QTime=3
+2020-05-18 15:57:55.962 INFO  (Thread-19) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:57:55.967 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817471755} status=0 QTime=0
+2020-05-18 15:57:55.972 INFO  (Thread-19) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:57:55.978 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:57:55.983 INFO  (Thread-19) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 15:57:55.985 ERROR (Thread-19) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:57:55.985 INFO  (Thread-19) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817471755&verbose=false} status=0 QTime=3{} 0 28
+2020-05-18 15:57:55.986 ERROR (Thread-19) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select id as 'id', title, name, date, description, type, path_file from filespdf; Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLSyntaxErrorException: Champ 'date' inconnu dans field list
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:764)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.executeStatement(JdbcDataSource.java:349)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:321)
+	... 14 more
+
+2020-05-18 15:57:55.986 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:57:55.993 INFO  (Thread-19) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:57:55.993 INFO  (Thread-19) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:57:57.273 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817471755} status=0 QTime=0
+2020-05-18 15:58:02.338 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817471755} status=0 QTime=0
+2020-05-18 15:59:13.818 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817553686} status=0 QTime=0
+2020-05-18 15:59:13.827 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817553800} status=0 QTime=0
+2020-05-18 15:59:13.834 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817553800} status=0 QTime=0
+2020-05-18 15:59:13.866 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817553687} status=0 QTime=44
+2020-05-18 15:59:13.901 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817553800} status=0 QTime=0
+2020-05-18 15:59:21.174 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 15:59:21.176 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 15:59:21.176 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 15:59:21.177 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817553800&verbose=false} status=0 QTime=3
+2020-05-18 15:59:21.179 INFO  (Thread-20) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 15:59:21.185 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817553800} status=0 QTime=0
+2020-05-18 15:59:21.195 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 15:59:21.245 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 15:59:21.258 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2020-05-18 15:59:22.205 ERROR (Thread-20) [   ] o.a.s.h.d.BinURLDataSource Exception thrown while getting data
+java.net.MalformedURLException: unknown protocol: nullc
+	at java.net.URL.<init>(Unknown Source) ~[?:1.8.0_251]
+	at java.net.URL.<init>(Unknown Source) ~[?:1.8.0_251]
+	at java.net.URL.<init>(Unknown Source) ~[?:1.8.0_251]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:81) ~[?:?]
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38) ~[?:?]
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132) ~[?:?]
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330) ~[?:?]
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483) ~[?:?]
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466) ~[?:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251]
+2020-05-18 15:59:22.296 ERROR (Thread-20) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=ASPMVC-Partie1.pdf, description=asp mvc, id=1, title=cours1, type=application/pdf, path_file=upload/ASPMVC-Partie1.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url null Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.MalformedURLException: unknown protocol: nullc
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:81)
+	... 12 more
+
+2020-05-18 15:59:22.347 INFO  (Thread-20) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817553800&verbose=false} status=0 QTime=3{} 0 1174
+2020-05-18 15:59:22.376 ERROR (Thread-20) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url null Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url null Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Exception in invoking url null Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:89)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:38)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.net.MalformedURLException: unknown protocol: nullc
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at java.net.URL.<init>(Unknown Source)
+	at org.apache.solr.handler.dataimport.BinURLDataSource.getData(BinURLDataSource.java:81)
+	... 12 more
+
+2020-05-18 15:59:22.376 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 15:59:22.417 INFO  (Thread-20) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 15:59:22.418 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 15:59:23.432 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817553800} status=0 QTime=0
+2020-05-18 15:59:57.365 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817597232} status=0 QTime=0
+2020-05-18 15:59:57.370 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817597347} status=0 QTime=0
+2020-05-18 15:59:57.376 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817597347} status=0 QTime=0
+2020-05-18 15:59:57.416 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817597233} status=0 QTime=47
+2020-05-18 15:59:57.447 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817597347} status=0 QTime=0
+2020-05-18 16:00:01.801 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:00:01.802 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:00:01.802 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:00:01.802 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817597347&verbose=false} status=0 QTime=2
+2020-05-18 16:00:01.803 INFO  (Thread-21) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:00:01.809 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817597347} status=0 QTime=0
+2020-05-18 16:00:01.815 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:00:01.819 INFO  (Thread-21) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:00:01.824 INFO  (Thread-21) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 16:00:02.030 INFO  (Thread-21) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 16:00:02.031 INFO  (Thread-21) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1667044581867257856,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:00:02.031 INFO  (Thread-21) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5c165007 commitCommandVersion:1667044581867257856
+2020-05-18 16:00:02.724 INFO  (Thread-21) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@a54dd24[FileCollection] main]
+2020-05-18 16:00:02.727 INFO  (Thread-21) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:00:02.728 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@a54dd24[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1c(8.0.0):C3:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589817602082}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:00:02.728 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:00:02.737 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@a54dd24[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1c(8.0.0):C3:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589817602082}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:00:02.741 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:00:02.742 INFO  (Thread-21) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 16:00:02.742 INFO  (Thread-21) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:0.927
+2020-05-18 16:00:02.742 INFO  (Thread-21) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817597347&verbose=false} status=0 QTime=2{add=[1 (1667044581658591232), 2 (1667044581864112128), 3 (1667044581865160704)],commit=} 0 942
+2020-05-18 16:00:03.034 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817597347} status=0 QTime=0
+2020-05-18 16:00:21.999 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:00:22.007 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:22.010 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817621982} status=0 QTime=1
+2020-05-18 16:00:22.052 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=45
+2020-05-18 16:00:22.074 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:26.727 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:00:26.729 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:00:26.729 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:00:26.730 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817621982&verbose=false} status=0 QTime=3
+2020-05-18 16:00:26.738 INFO  (Thread-22) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:00:26.741 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:26.750 INFO  (Thread-22) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:00:26.763 INFO  (Thread-22) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:00:26.767 INFO  (Thread-22) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 16:00:28.156 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:28.625 WARN  (Thread-22) [   ] o.a.p.p.f.FileSystemFontProvider New fonts found, font cache will be re-built
+2020-05-18 16:00:28.625 WARN  (Thread-22) [   ] o.a.p.p.f.FileSystemFontProvider Building on-disk font cache, this may take a while
+2020-05-18 16:00:29.304 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:30.179 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:30.980 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:32.246 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:33.138 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:34.331 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:37.652 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:38.383 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:39.620 WARN  (Thread-22) [   ] o.a.p.p.f.FileSystemFontProvider Finished building on-disk font cache, found 411 fonts
+2020-05-18 16:00:39.774 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:39.796 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:39.804 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:40.209 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:40.219 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:40.324 INFO  (Thread-22) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:00:40.361 ERROR (Thread-22) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:00:40.362 INFO  (Thread-22) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589817621982&verbose=false} status=0 QTime=3{add=[1 (1667044621736214528), 2 (1667044622049738752)]} 0 13634
+2020-05-18 16:00:40.362 ERROR (Thread-22) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:00:40.363 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:00:40.369 INFO  (Thread-22) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:00:40.369 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:00:43.607 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:00:56.935 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:00:56.965 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=32
+2020-05-18 16:00:59.970 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589817656905} hits=3 status=0 QTime=79
+2020-05-18 16:01:04.021 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:04.031 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:04.067 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=46
+2020-05-18 16:01:04.081 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:04.091 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:04.108 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:04.120 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:04.123 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=39
+2020-05-18 16:01:05.101 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:05.117 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1589817665090} status=0 QTime=14
+2020-05-18 16:01:05.145 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=40
+2020-05-18 16:01:14.542 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@1e9b145a[FileCollection] realtime]
+2020-05-18 16:01:14.557 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@7f576622[FileCollection] realtime]
+2020-05-18 16:01:14.560 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json}{deleteByQuery=*:* (-1667044657893212160)} 0 76
+2020-05-18 16:01:15.558 INFO  (commitScheduler-22-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2020-05-18 16:01:15.558 INFO  (commitScheduler-22-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@46b62e9d[FileCollection] main]
+2020-05-18 16:01:15.558 INFO  (commitScheduler-22-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:01:15.558 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@46b62e9d[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:01:15.559 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:01:15.561 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@46b62e9d[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:01:16.982 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1589817665090} status=0 QTime=19
+2020-05-18 16:01:16.983 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:16.986 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/replication params={wt=json&command=details&_=1589817676949} status=0 QTime=2
+2020-05-18 16:01:16.995 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1589817621858&ts=1589817621858} status=503 QTime=0
+2020-05-18 16:01:17.081 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/system params={wt=json&_=1589817676949} status=0 QTime=96
+2020-05-18 16:01:17.081 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=85
+2020-05-18 16:01:19.378 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:19.378 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:19.421 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=39
+2020-05-18 16:01:19.435 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:19.435 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:01:19.435 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:19.468 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:01:19.473 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=36
+2020-05-18 16:01:29.558 INFO  (commitScheduler-21-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:01:29.559 INFO  (commitScheduler-21-thread-3) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1162b429 commitCommandVersion:0
+2020-05-18 16:01:29.675 INFO  (commitScheduler-21-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@1b9adf59[FileCollection] realtime]
+2020-05-18 16:01:29.676 INFO  (commitScheduler-21-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:05:12.703 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:05:12.739 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=37
+2020-05-18 16:05:15.987 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589817656905} hits=0 status=0 QTime=1
+2020-05-18 16:05:18.471 INFO  (qtp349420578-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:05:18.475 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:05:18.519 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=49
+2020-05-18 16:05:18.531 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589817621858} status=0 QTime=0
+2020-05-18 16:05:18.531 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589817621982} status=0 QTime=0
+2020-05-18 16:05:18.532 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589817621982} status=0 QTime=0
+2020-05-18 16:05:18.562 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589817621982} status=0 QTime=0
+2020-05-18 16:05:18.571 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589817621858} status=0 QTime=35
+2020-05-18 16:20:57.883 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:20:57.926 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589818857864} status=0 QTime=0
+2020-05-18 16:20:57.927 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589818857864} status=0 QTime=0
+2020-05-18 16:20:57.939 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=52
+2020-05-18 16:20:57.954 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818857864} status=0 QTime=0
+2020-05-18 16:20:59.858 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:20:59.859 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:20:59.859 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:20:59.860 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589818857864&verbose=false} status=0 QTime=2
+2020-05-18 16:20:59.860 INFO  (Thread-23) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:20:59.867 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818857864} status=0 QTime=0
+2020-05-18 16:20:59.870 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:20:59.883 INFO  (Thread-23) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:20:59.889 INFO  (Thread-23) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2020-05-18 16:20:59.949 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:20:59.961 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:20:59.966 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.056 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.064 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.069 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.177 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.184 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.188 INFO  (Thread-23) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:21:00.231 INFO  (Thread-23) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 16:21:00.231 INFO  (Thread-23) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1667045901185581056,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:21:00.231 INFO  (Thread-23) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1162b429 commitCommandVersion:1667045901185581056
+2020-05-18 16:21:00.979 INFO  (Thread-23) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@33ccf31[FileCollection] main]
+2020-05-18 16:21:00.979 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@33ccf31[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1d(8.0.0):C3:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589818860250}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:21:00.979 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:21:00.980 INFO  (Thread-23) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:21:00.983 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@33ccf31[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1d(8.0.0):C3:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589818860250}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:21:00.983 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:21:00.984 INFO  (Thread-23) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 16:21:00.984 INFO  (Thread-23) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.114
+2020-05-18 16:21:00.984 INFO  (Thread-23) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589818857864&verbose=false} status=0 QTime=2{add=[1 (1667045900954894336), 2 (1667045901093306368), 3 (1667045901179289600)],commit=} 0 1127
+2020-05-18 16:21:02.343 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818857864} status=0 QTime=0
+2020-05-18 16:21:06.457 INFO  (qtp349420578-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:21:06.489 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=31
+2020-05-18 16:21:09.185 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589818866424} hits=3 status=0 QTime=1
+2020-05-18 16:21:24.669 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:21:24.677 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1589818884659} status=0 QTime=4
+2020-05-18 16:21:24.707 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=37
+2020-05-18 16:21:32.920 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@2d7a4ed[FileCollection] realtime]
+2020-05-18 16:21:32.921 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json}{deleteByQuery=*:* (-1667045935457239040)} 0 7
+2020-05-18 16:21:33.920 INFO  (commitScheduler-22-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2020-05-18 16:21:33.920 INFO  (commitScheduler-22-thread-2) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@35fb8025[FileCollection] main]
+2020-05-18 16:21:33.921 INFO  (commitScheduler-22-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:21:33.921 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@35fb8025[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:21:33.921 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:21:33.923 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@35fb8025[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:21:34.966 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1589818884659} status=0 QTime=0
+2020-05-18 16:21:34.971 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/replication params={wt=json&command=details&_=1589818894949} status=0 QTime=2
+2020-05-18 16:21:34.975 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1589818857750&ts=1589818857750} status=503 QTime=0
+2020-05-18 16:21:34.975 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:21:35.043 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/system params={wt=json&_=1589818894949} status=0 QTime=73
+2020-05-18 16:21:35.044 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=66
+2020-05-18 16:21:36.113 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589818857864} status=0 QTime=0
+2020-05-18 16:21:36.114 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:21:36.157 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=40
+2020-05-18 16:21:36.167 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818857749} status=0 QTime=0
+2020-05-18 16:21:36.175 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589818857864} status=0 QTime=0
+2020-05-18 16:21:36.182 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589818857864} status=0 QTime=0
+2020-05-18 16:21:36.198 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818857864} status=0 QTime=0
+2020-05-18 16:21:36.209 INFO  (qtp349420578-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818857750} status=0 QTime=41
+2020-05-18 16:21:47.920 INFO  (commitScheduler-21-thread-5) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:21:47.920 INFO  (commitScheduler-21-thread-5) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@1162b429 commitCommandVersion:0
+2020-05-18 16:21:47.990 INFO  (commitScheduler-21-thread-5) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@69cfda38[FileCollection] realtime]
+2020-05-18 16:21:47.991 INFO  (commitScheduler-21-thread-5) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:23:16.004 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589818995840} status=0 QTime=0
+2020-05-18 16:23:16.012 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589818995988} status=0 QTime=0
+2020-05-18 16:23:16.014 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589818995988} status=0 QTime=1
+2020-05-18 16:23:16.054 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589818995840} status=0 QTime=48
+2020-05-18 16:23:16.074 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818995988} status=0 QTime=0
+2020-05-18 16:23:17.665 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:23:17.666 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:23:17.666 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:23:17.667 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589818995988&verbose=false} status=0 QTime=2
+2020-05-18 16:23:17.667 INFO  (Thread-24) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:23:17.673 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818995988} status=0 QTime=0
+2020-05-18 16:23:17.675 INFO  (Thread-24) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:23:17.685 INFO  (Thread-24) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:23:17.690 INFO  (Thread-24) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 16:23:17.734 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.741 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.745 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.852 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.859 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.895 INFO  (Thread-24) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:23:17.920 ERROR (Thread-24) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:23:17.921 INFO  (Thread-24) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1589818995988&verbose=false} status=0 QTime=2{add=[1 (1667046045429792768), 2 (1667046045554573312)]} 0 257
+2020-05-18 16:23:17.922 ERROR (Thread-24) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:23:17.922 INFO  (Thread-24) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:23:17.925 INFO  (Thread-24) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:23:17.925 INFO  (Thread-24) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:23:19.108 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589818995988} status=0 QTime=0
+2020-05-18 16:24:38.463 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589819078334} status=0 QTime=0
+2020-05-18 16:24:38.465 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589819078446} status=0 QTime=0
+2020-05-18 16:24:38.468 INFO  (qtp349420578-16) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589819078446} status=0 QTime=0
+2020-05-18 16:24:38.504 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589819078335} status=0 QTime=38
+2020-05-18 16:24:38.526 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819078446} status=0 QTime=0
+2020-05-18 16:24:42.429 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:24:42.431 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:24:42.431 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:24:42.431 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819078446&verbose=false} status=0 QTime=2
+2020-05-18 16:24:42.435 INFO  (Thread-25) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:24:42.439 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819078446} status=0 QTime=0
+2020-05-18 16:24:42.444 INFO  (Thread-25) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:24:42.454 INFO  (Thread-25) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:24:42.458 INFO  (Thread-25) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 16:24:42.527 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.531 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.534 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.592 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.598 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.634 INFO  (Thread-25) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:24:42.663 ERROR (Thread-25) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:24:42.667 INFO  (Thread-25) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819078446&verbose=false} status=0 QTime=2{add=[1 (1667046134316531712), 2 (1667046134416146432)]} 0 238
+2020-05-18 16:24:42.669 ERROR (Thread-25) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:/wamp64/www/Solr_mysql_pdf/upload/Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:24:42.669 INFO  (Thread-25) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:24:42.673 INFO  (Thread-25) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:24:42.673 INFO  (Thread-25) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:24:44.123 INFO  (qtp349420578-22) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819078446} status=0 QTime=0
+2020-05-18 16:25:45.492 INFO  (qtp349420578-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589819145363} status=0 QTime=0
+2020-05-18 16:25:45.494 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589819145476} status=0 QTime=0
+2020-05-18 16:25:45.501 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589819145476} status=0 QTime=0
+2020-05-18 16:25:45.535 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589819145364} status=0 QTime=40
+2020-05-18 16:25:45.568 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819145476} status=0 QTime=0
+2020-05-18 16:25:51.251 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819145476} status=0 QTime=0
+2020-05-18 16:25:56.072 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:25:56.073 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:25:56.073 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:25:56.073 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819145476&verbose=false} status=0 QTime=2
+2020-05-18 16:25:56.076 INFO  (Thread-26) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:25:56.081 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819145476} status=0 QTime=0
+2020-05-18 16:25:56.084 INFO  (Thread-26) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:25:56.115 INFO  (Thread-26) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:25:56.118 INFO  (Thread-26) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 16:25:56.158 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.163 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.165 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.229 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.237 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.273 INFO  (Thread-26) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:25:56.333 ERROR (Thread-26) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:25:56.334 INFO  (Thread-26) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819145476&verbose=false} status=0 QTime=2{add=[1 (1667046211523182592), 2 (1667046211656351744)]} 0 262
+2020-05-18 16:25:56.335 ERROR (Thread-26) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:25:56.335 INFO  (Thread-26) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:25:56.339 INFO  (Thread-26) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:25:56.339 INFO  (Thread-26) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:25:57.526 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819145476} status=0 QTime=1
+2020-05-18 16:26:52.894 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589819212744} status=0 QTime=0
+2020-05-18 16:26:52.898 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589819212877} status=0 QTime=0
+2020-05-18 16:26:52.910 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589819212878} status=0 QTime=0
+2020-05-18 16:26:52.941 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589819212744} status=0 QTime=43
+2020-05-18 16:26:52.967 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:27:04.823 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:27:04.825 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:27:04.825 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:27:04.825 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819212878&verbose=false} status=0 QTime=2
+2020-05-18 16:27:04.826 INFO  (Thread-27) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:27:04.835 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:27:04.840 INFO  (Thread-27) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:27:04.851 INFO  (Thread-27) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:27:04.855 INFO  (Thread-27) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2020-05-18 16:27:04.894 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:04.900 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:04.904 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:04.960 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:04.967 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:05.018 INFO  (Thread-27) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:27:05.038 ERROR (Thread-27) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:27:05.038 INFO  (Thread-27) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819212878&verbose=false} status=0 QTime=2{add=[1 (1667046283596005376), 2 (1667046283708203008)]} 0 215
+2020-05-18 16:27:05.039 ERROR (Thread-27) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:27:05.039 INFO  (Thread-27) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:27:05.045 INFO  (Thread-27) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:27:05.045 INFO  (Thread-27) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:27:06.268 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:30:21.447 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:30:21.449 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:30:21.449 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:30:21.450 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819212878&verbose=false} status=0 QTime=3
+2020-05-18 16:30:21.462 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:30:21.463 INFO  (Thread-28) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:30:21.468 INFO  (Thread-28) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:30:21.479 INFO  (Thread-28) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:30:21.481 INFO  (Thread-28) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 2
+2020-05-18 16:30:21.519 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.526 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.529 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.589 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.596 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.662 INFO  (Thread-28) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:30:21.696 ERROR (Thread-28) [   ] o.a.s.h.d.DocBuilder Exception while processing: search document : SolrInputDocument(fields: [name=Génielogiciel-IOC.pdf, description=asp mvc genie logiciel, id=3, title=cours3, type=application/pdf, path_file=upload/Génielogiciel-IOC.pdf]):org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:30:21.696 INFO  (Thread-28) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589819212878&verbose=false} status=0 QTime=3{add=[1 (1667046489776455680), 2 (1667046489915916288)]} 0 249
+2020-05-18 16:30:21.697 ERROR (Thread-28) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:61)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:270)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:517)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:127)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:51)
+	at org.apache.solr.handler.dataimport.BinFileDataSource.getData(BinFileDataSource.java:42)
+	at org.apache.solr.handler.dataimport.TikaEntityProcessor.nextRow(TikaEntityProcessor.java:132)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	... 9 more
+Caused by: java.io.FileNotFoundException: Could not find file: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf (resolved to: C:\wamp64\www\Solr_mysql_pdf\upload\Génielogiciel-IOC.pdf
+	at org.apache.solr.handler.dataimport.FileDataSource.getFile(FileDataSource.java:124)
+	... 13 more
+
+2020-05-18 16:30:21.697 INFO  (Thread-28) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-05-18 16:30:21.709 INFO  (Thread-28) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-05-18 16:30:21.709 INFO  (Thread-28) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-05-18 16:30:23.977 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:30:24.950 INFO  (qtp349420578-18) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589819212878} status=0 QTime=0
+2020-05-18 16:50:33.784 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:50:33.793 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589820633766} status=0 QTime=0
+2020-05-18 16:50:33.797 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589820633766} status=0 QTime=1
+2020-05-18 16:50:33.831 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=44
+2020-05-18 16:50:33.868 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:50:38.338 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:50:38.340 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:50:38.340 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:50:38.341 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=3
+2020-05-18 16:50:38.342 INFO  (Thread-29) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:50:38.348 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:50:38.352 INFO  (Thread-29) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:50:38.375 INFO  (Thread-29) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:50:38.381 INFO  (Thread-29) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 5
+2020-05-18 16:50:38.435 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.442 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.445 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.526 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.532 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.570 INFO  (Thread-29) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:50:38.589 INFO  (Thread-29) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 16:50:38.589 INFO  (Thread-29) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1667047765929099264,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:50:38.589 INFO  (Thread-29) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@548d83b3 commitCommandVersion:1667047765929099264
+2020-05-18 16:50:39.646 INFO  (Thread-29) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@13afb4cd[FileCollection] main]
+2020-05-18 16:50:39.646 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@13afb4cd[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820638609}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:50:39.647 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:50:39.647 INFO  (Thread-29) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:50:39.648 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@13afb4cd[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820638609}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:50:39.649 INFO  (Thread-29) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:50:39.649 INFO  (Thread-29) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 16:50:39.649 INFO  (Thread-29) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.296
+2020-05-18 16:50:39.649 INFO  (Thread-29) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=3{add=[1 (1667047765825290240), 2 (1667047765922807808)],commit=} 0 1311
+2020-05-18 16:50:40.609 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:50:44.370 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:50:44.403 INFO  (qtp349420578-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=32
+2020-05-18 16:50:48.439 INFO  (qtp349420578-23) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589820644337} hits=2 status=0 QTime=0
+2020-05-18 16:52:58.992 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589820633766} status=0 QTime=0
+2020-05-18 16:52:58.993 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:52:59.048 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=52
+2020-05-18 16:52:59.060 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:52:59.065 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589820633766} status=0 QTime=0
+2020-05-18 16:52:59.069 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589820633766} status=0 QTime=0
+2020-05-18 16:52:59.099 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=38
+2020-05-18 16:52:59.099 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:18.844 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:53:18.845 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:53:18.846 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:53:18.846 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=3
+2020-05-18 16:53:18.846 INFO  (Thread-30) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:53:18.856 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:18.862 INFO  (Thread-30) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:53:18.876 INFO  (Thread-30) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:53:18.886 INFO  (Thread-30) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 9
+2020-05-18 16:53:18.942 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:18.947 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:18.950 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:19.007 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:19.013 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:19.041 INFO  (Thread-30) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:19.058 INFO  (Thread-30) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 16:53:19.058 INFO  (Thread-30) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1667047934193041408,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:53:19.058 INFO  (Thread-30) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@548d83b3 commitCommandVersion:1667047934193041408
+2020-05-18 16:53:19.977 INFO  (Thread-30) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@26d0c6af[FileCollection] main]
+2020-05-18 16:53:19.978 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@26d0c6af[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1f(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820799098}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:53:19.978 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:53:19.979 INFO  (Thread-30) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:53:19.980 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@26d0c6af[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1f(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820799098}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:53:19.985 INFO  (Thread-30) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:53:19.985 INFO  (Thread-30) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 16:53:19.985 INFO  (Thread-30) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.123
+2020-05-18 16:53:19.985 INFO  (Thread-30) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=3{add=[1 (1667047934104961024), 2 (1667047934188847104)],commit=} 0 1142
+2020-05-18 16:53:20.242 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:25.763 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:53:25.765 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1589820805751} status=0 QTime=2
+2020-05-18 16:53:25.803 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=33
+2020-05-18 16:53:35.753 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.s.SolrIndexSearcher Opening [Searcher@74f497b8[FileCollection] realtime]
+2020-05-18 16:53:35.754 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json}{deleteByQuery=*:* (-1667047951696920576)} 0 4
+2020-05-18 16:53:36.753 INFO  (commitScheduler-22-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+2020-05-18 16:53:36.753 INFO  (commitScheduler-22-thread-3) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@d651755[FileCollection] main]
+2020-05-18 16:53:36.753 INFO  (commitScheduler-22-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:53:36.753 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@d651755[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:53:36.753 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:53:36.755 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@d651755[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-05-18 16:53:38.006 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:53:38.009 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1589820805751} status=0 QTime=0
+2020-05-18 16:53:38.012 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1589820633649&ts=1589820633649} status=503 QTime=0
+2020-05-18 16:53:38.020 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/replication params={wt=json&command=details&_=1589820817992} status=0 QTime=1
+2020-05-18 16:53:38.082 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/system params={wt=json&_=1589820817992} status=0 QTime=64
+2020-05-18 16:53:38.082 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=73
+2020-05-18 16:53:40.455 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:53:40.476 INFO  (qtp349420578-17) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:40.500 INFO  (qtp349420578-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=45
+2020-05-18 16:53:40.516 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:40.542 INFO  (qtp349420578-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:53:40.543 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:40.568 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:40.582 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=39
+2020-05-18 16:53:44.814 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-05-18 16:53:44.816 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-05-18 16:53:44.816 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-05-18 16:53:44.816 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=2
+2020-05-18 16:53:44.817 INFO  (Thread-31) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-05-18 16:53:44.822 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:44.827 INFO  (Thread-31) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:53:44.850 INFO  (Thread-31) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity search with URL: jdbc:mysql://localhost:3306/bd_search?serverTimezone=UTC
+2020-05-18 16:53:44.853 INFO  (Thread-31) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 3
+2020-05-18 16:53:44.895 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:44.900 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:44.903 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font ABCDEE+Calibri,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:44.950 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Bold are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:44.954 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:44.981 INFO  (Thread-31) [   ] o.a.p.p.f.PDCIDFontType2 OpenType Layout tables used in font Arial,Italic are not implemented in PDFBox and will be ignored
+2020-05-18 16:53:45.012 INFO  (Thread-31) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-05-18 16:53:45.012 INFO  (Thread-31) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1667047961407782912,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-05-18 16:53:45.012 INFO  (Thread-31) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@548d83b3 commitCommandVersion:1667047961407782912
+2020-05-18 16:53:45.833 INFO  (Thread-31) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@767c321b[FileCollection] main]
+2020-05-18 16:53:45.833 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@767c321b[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820825028}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:53:45.833 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-05-18 16:53:45.834 INFO  (Thread-31) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-05-18 16:53:45.836 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [FileCollection] Registered new searcher Searcher@767c321b[FileCollection] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1g(8.0.0):C2:[diagnostics={os=Windows 10, java.vendor=Oracle Corporation, java.version=1.8.0_251, java.vm.version=25.251-b08, lucene.version=8.0.0, os.arch=amd64, java.runtime.version=1.8.0_251-b08, source=flush, os.version=10.0, timestamp=1589820825028}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-05-18 16:53:45.836 INFO  (Thread-31) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-05-18 16:53:45.837 INFO  (Thread-31) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-05-18 16:53:45.837 INFO  (Thread-31) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:1.9
+2020-05-18 16:53:45.837 INFO  (Thread-31) [   ] o.a.s.u.p.LogUpdateProcessorFactory [FileCollection]  webapp=/solr path=/dataimport params={core=FileCollection&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&entity=search&_=1589820633766&verbose=false} status=0 QTime=2{add=[1 (1667047961314459648), 2 (1667047961405685760)],commit=} 0 1023
+2020-05-18 16:53:46.379 INFO  (qtp349420578-19) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1589820633766} status=0 QTime=0
+2020-05-18 16:53:48.675 INFO  (qtp349420578-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1589820633648} status=0 QTime=0
+2020-05-18 16:53:48.706 INFO  (qtp349420578-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1589820633649} status=0 QTime=31
+2020-05-18 16:53:52.064 INFO  (qtp349420578-20) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589820644337} hits=2 status=0 QTime=0
+2020-05-18 16:54:31.374 INFO  (qtp349420578-14) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=text:validateur&_=1589820644337} hits=1 status=0 QTime=39
+2020-05-18 16:57:37.900 INFO  (qtp349420578-21) [   x:FileCollection] o.a.s.c.S.Request [FileCollection]  webapp=/solr path=/select params={q=*:*&_=1589820644337} hits=2 status=0 QTime=0
